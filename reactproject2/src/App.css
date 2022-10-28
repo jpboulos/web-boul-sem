@@ -1,10 +1,15 @@
-.App {
+.mynav{
+    background-color:darkred;
+    color:azure;
     
-    text-align: center;
-    background-image: url("http://giesla.com/wp-content/uploads/2011/02/nightmpls.jpg");
-    background-size: auto ;
 }
-.header{
-    background-color:aqua;
+.me-auto{
+    
+    color:whitesmoke;
 }
-
+.navbar-brand{
+    color:aliceblue;
+}
+.nav-link{
+    color:aliceblue
+}

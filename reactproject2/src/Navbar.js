@@ -1,16 +1,16 @@
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, Container,NavDropdown } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-function Navbar() {
+function MyNavbar() {
     return (
-        <Navbar bg="cover" expand="lg">
+        <Navbar className="mynav" sticky="top">
             <Container>
-                <Navbar.Brand href="#home" color='#ff34'>Yalla</Navbar.Brand>
+                <Navbar.Brand href="#home" >Yalla</Navbar.Brand>
 
 
 
-                <Nav className="me-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#link">Link</Nav.Link>
+                <Nav className="me-auto" justify="true"  >
+                    <Nav.Link href="#home" color="" >Home</Nav.Link>
+                    <Nav.Link  href="#link">Link</Nav.Link>
 
                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -31,4 +31,4 @@ function Navbar() {
         )
 
 }
-export default Navbar
+export default MyNavbar
