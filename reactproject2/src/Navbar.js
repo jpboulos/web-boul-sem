@@ -9,18 +9,18 @@ function MyNavbar() {
 
 
                 <Nav className="me-auto" justify="true"  >
-                    <Nav.Link href="#home" color="" >Home</Nav.Link>
-                    <Nav.Link  href="#link">Link</Nav.Link>
+                    <Nav.Link href="#paid-sub" color="" >Gold</Nav.Link>
+                    <Nav.Link  href="#safety-disc">Safety</Nav.Link>
 
-                    <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                    <NavDropdown title="Support" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="#action/3.1">Sponsors</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">
-                            Another action
+                            Our Team
                         </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">Our Values</NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item href="#action/3.4">
-                            Separated link
+                            Contact Us
                         </NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
