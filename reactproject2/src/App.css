@@ -1,5 +1,5 @@
 .mynav{
-    background-color:darkred;
+    background-color:red;
     color:azure;
     
 }
@@ -13,4 +13,10 @@
 .nav-link{
     color:aliceblue
 }
+.btn-auth{
+    padding-right:100px;
+    
+    
 
+
+}
