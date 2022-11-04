@@ -31,19 +31,19 @@ function Login() {
                         </Form.Group>
                         <Form.Group
                             className="mb-3"
-                            controlId="exampleForm.ControlTextarea1"
+                            controlId="exampleForm.ControlLogPass"
                         >
-                            <Form.Label>Example textarea</Form.Label>
-                            <Form.Control as="textarea" rows={3} />
+                            <Form.Label>Password</Form.Label>
+                            <Form.Control type="password" placeholder="no see me" />
                         </Form.Group>
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
+                    <Button className="btn-sec" variant="secondary" onClick={handleClose}>
                         Close
                     </Button>
-                    <Button variant="primary" onClick={handleClose}>
-                        Save Changes
+                    <Button className="btn-sec" variant="primary" onClick={handleClose}>
+                        Confirm
                     </Button>
                 </Modal.Footer>
             </Modal>

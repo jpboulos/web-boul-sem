@@ -63,11 +63,11 @@ function CrAcc() {
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
+                    <Button className="btn-sec" variant="secondary" onClick={handleClose}>
                         Close
                     </Button>
-                    <Button variant="primary" onClick={handleClose}>
-                        Save Changes
+                    <Button className="btn-sec" variant="primary" onClick={handleClose}>
+                        Confirm 
                     </Button>
                 </Modal.Footer>
             </Modal>
