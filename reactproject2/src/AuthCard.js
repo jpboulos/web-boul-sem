@@ -6,7 +6,7 @@ function AuthCard() {
 
         <>
             <Card>
-                <Card.Img variant="top" src="https://wallpaperaccess.com/full/3214373.jpg" />
+                <Card.Img  variant="top" src="https://res.cloudinary.com/dsc2dexdm/image/upload/v1666962913/FamilyCamping-2021-GettyImages-948512452-2_qz965s.jpg" />
                 <Card.Body>
                     <Card.Text>
                         <row>

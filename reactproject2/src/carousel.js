@@ -1,4 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
+import Login from './Log-modal';
+import CrAcc from "./CrAcc";
 
 
 function MyCarousel() {
@@ -11,8 +13,8 @@ function MyCarousel() {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <CrAcc/>
+                    
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -23,9 +25,10 @@ function MyCarousel() {
                 />
 
                 <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <CrAcc/>
+                    
                 </Carousel.Caption>
+
             </Carousel.Item>
             <Carousel.Item>
                 <img
@@ -35,11 +38,10 @@ function MyCarousel() {
                 />
 
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
+                    <CrAcc/>
+                    
                 </Carousel.Caption>
+                
             </Carousel.Item>
         </Carousel>
     );

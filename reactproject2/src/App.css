@@ -1,7 +1,9 @@
-.mynav{
-    background-color:red;
-    color:azure;
-    
+.main {
+    background-image: url(https://res.cloudinary.com/dsc2dexdm/image/upload/v1666962913/FamilyCamping-2021-GettyImages-948512452-2_qz965s.jpg)
+}
+.mynav {
+    background-color: #f13e3e;
+    color: azure;
 }
 .me-auto{
     
@@ -19,4 +21,10 @@
     
 
 
+}
+.log-btn{
+    color:aliceblue
+}
+.create-btn {
+    background-color: #f13e3e;
 }

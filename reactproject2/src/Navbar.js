@@ -1,5 +1,6 @@
 import { Navbar, Nav, Container,NavDropdown } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Login from './Log-modal';
 function MyNavbar() {
     return (
         <Navbar className="mynav" sticky="top">
@@ -23,9 +24,11 @@ function MyNavbar() {
                             Contact Us
                         </NavDropdown.Item>
                     </NavDropdown>
+                    
                 </Nav>
 
             </Container>
+            <Login />
         </Navbar>
         
         )
