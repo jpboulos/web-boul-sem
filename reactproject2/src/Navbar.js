@@ -28,6 +28,7 @@ function MyNavbar() {
                 </Nav>
 
             </Container>
+            
             <Login />
         </Navbar>
         

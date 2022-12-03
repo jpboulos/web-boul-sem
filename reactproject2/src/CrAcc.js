@@ -34,7 +34,7 @@ function CrAcc() {
     const handleSubmit = () => {
         const configuration = {
             method: "post",
-
+            url: "http://localhost:3000/./register",
             data: {
                 firstName,
                 lastName,
@@ -47,6 +47,7 @@ function CrAcc() {
         axios(configuration)
         .then((result) => { console.log(result); })
         .catch((error) => { console.log(error); })
+        handleClose()
     }
 
 
@@ -119,7 +120,7 @@ function CrAcc() {
                     <Button className="btn-sec" variant="secondary" onClick={handleClose}>
                         Close
                     </Button>
-                    <Button className="btn-sec" variant="primary" onClick={()=>handleSubmit() }>
+                    <Button className="btn-sec" variant="secondary" onClick={()=>handleSubmit() }>
                         Confirm 
                     </Button>
                 </Modal.Footer>
