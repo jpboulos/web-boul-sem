@@ -22,6 +22,8 @@ function MyCarousel() {
                     className="d-block w-100"
                     src="https://res.cloudinary.com/dsc2dexdm/image/upload/v1666962828/laguna-beach-nightlife-1_694f32bf0e9ef81016789076834d1a45_jrrlya.jpg"
                     alt="Second slide"
+                    fluid
+
                 />
 
                 <Carousel.Caption>

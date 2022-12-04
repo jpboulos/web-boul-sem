@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
+
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import axios from "axios";
@@ -41,13 +42,16 @@ function Login() {
 
     return (
         <>
-            <Button className='log-btn' variant="cover" c onClick={handleShow} >
-                Log-in
+            <Button className='log-btn' variant="cover" c onClick={handleShow} style={{ visibility: login ? 'hidden' : 'visible' }} >
+                Login
+            </Button>
+            <Button className='loged-btn' style={{ visibility: login ? 'visible' : 'hidden' }}>
+                
             </Button>
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Log-in</Modal.Title>
+                    <Modal.Title>Login</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Form onSubmit={() => handleSubmit()}>
