@@ -12,9 +12,9 @@ const Group = () => {
             <Card border='danger' text='light'>
                 <Days />
             </Card>
-            <Card border='dark'>
+            <Card style={{} }>
                 <Mobile />
-                <Search/>
+                
             </Card>
 
         </CardGroup>

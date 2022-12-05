@@ -10,6 +10,8 @@ import Search from './SearchBar.js'
 import Group from './Group.js'
 import Mobile from './Mobile.js'
 
+import MyForm from './form.js';
+
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -24,12 +26,23 @@ function App() {
             
            
             <body >
-                <MyCarousel />
+                
+                {localStorage.getItem("logedin") ? (
+
+                    <MyForm/>
+                ) : (
+                    <MyCarousel/>
+                )}
                 <Group/>
-                
-                
 
             </body>
+
+            
+                
+           
+            
+            
+            
                 
                 
             

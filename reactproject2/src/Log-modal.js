@@ -12,9 +12,15 @@ function Login() {
     const [login, setLogin] = useState(false);
     const [email, setEmail] = useState(null);
     const [password, setPassword] = useState(null);
+
+    useState(() => localStorage.setItem('logedin', login));
+    
+    
+
+
     const handleInputChange = (e) => {
         const { id, value } = e.target;
-       
+
         if (id === "email") {
             setEmail(value);
         }
@@ -35,18 +41,21 @@ function Login() {
 
         }
         axios(configuration)
-            .then((result) => { console.log(result); setLogin(true); })
-            .catch((error) => { console.log(error); error = new Error(); })
+            .then((result) => { console.log(result); setLogin(true); alert("Login Succesful") })
+            .catch((error) => { console.log(error); error = new Error(); alert("Login")})
         handleClose()
+        
     }
+
 
     return (
         <>
             <Button className='log-btn' variant="cover" c onClick={handleShow} style={{ visibility: login ? 'hidden' : 'visible' }} >
                 Login
             </Button>
-            <Button className='loged-btn' style={{ visibility: login ? 'visible' : 'hidden' }}>
-                
+            <Button className='loged-btn' variant="danger" style={{ visibility: login ? 'visible' : 'hidden' }}>
+                <img src="https://res.cloudinary.com/druf88abz/image/upload/v1670251194/Add_a_subheading_1_vj3bx8.png" width="40" />
+
             </Button>
 
             <Modal show={show} onHide={handleClose}>
@@ -92,13 +101,17 @@ function Login() {
                     <Button className="btn-sec" variant="secondary" onClick={handleClose}>
                         Close
                     </Button>
-                    <Button className="btn-sec" variant="secondary" onClick={handleSubmit }>
+                    <Button className="btn-sec" variant="secondary" onClick={handleSubmit}>
                         Confirm
                     </Button>
                 </Modal.Footer>
             </Modal>
         </>
+        
     );
+    
+    
+
 }
 
-export default Login
+export default  Login

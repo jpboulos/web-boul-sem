@@ -4,7 +4,8 @@ import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './Log-modal';
 import Search from './SearchBar.js';
-import   './testpage.js'
+import './testpage.js'
+import Gold from "./Gold"
 function MyNavbar() {
     const [show, setShow] = useState(false);
     const showApp = () => setShow(true);
@@ -16,7 +17,7 @@ function MyNavbar() {
 
 
                 <Nav className="me-auto" justify="true"  >
-                    <Nav.Link href="#paid-sub"  >Gold</Nav.Link>
+                    <Gold/>
                     <Nav.Link  href="#safety-disc">Safety</Nav.Link>
 
                     <NavDropdown title="Support" id="basic-nav-dropdown">
@@ -34,7 +35,7 @@ function MyNavbar() {
                             Contact Us
                         </NavDropdown.Item>
                     </NavDropdown>
-                    <Search/>
+                    
 
                     
                 </Nav>
